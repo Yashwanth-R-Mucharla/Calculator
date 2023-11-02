@@ -33,7 +33,7 @@ const Calculator=()=>{
         //console.log(exp);
     }
     function handleChange(event){
-        console.log(event.target.value);
+        console.log("Working");
     }
     const handleEval=()=>{
         try{
