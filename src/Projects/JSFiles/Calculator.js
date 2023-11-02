@@ -32,6 +32,9 @@ const Calculator=()=>{
         //console.log(curDis);
         //console.log(exp);
     }
+    function handleChange(event){
+        console.log(event.target.value);
+    }
     const handleEval=()=>{
         try{
             var sol = (eval(curDis));
@@ -54,7 +57,7 @@ const Calculator=()=>{
             <center>
             <div className="outline">
                 <div className="display-div">
-                    <text className="display">{curDis}</text>
+                    <text className="display" onChange={handleChange}>{curDis}</text>
                 </div>
                 <div>
                     <table className="tableClass">
